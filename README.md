@@ -8,13 +8,13 @@ Clone and cd into the main directory where `index.ts` exists.
 Use NPM to install dependencies.
 
 ```console
-you@XLSX-Cleaner:~$ npm i
+foo@bar:~/spreadsheet-cleaner $ npm i
 ```
 
 ## Usage
 
 ```console
-you@XLSX-Cleaner:~$ npx ts-node index.ts
+foo@bar:~/spreadsheet-cleaner $ npx ts-node index.ts
 ```
 
 ## Contributing
