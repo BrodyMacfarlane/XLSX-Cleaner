@@ -1,5 +1,6 @@
 import Progress from "../progress/Progress"
 import fs from 'fs/promises'
+import Exception from "../exceptions/Exception"
 
 type dir = string
 type file = {
@@ -20,14 +21,24 @@ const validateFileOrDirExists = async (file) => {
 }
 
 const createDir = async (dir) => {
-  await fs.mkdir(dir)
-  modified.push(dir)
-  Progress.statement(`Created ${dir}`)
+  try {
+    await fs.mkdir(dir, { recursive: true })
+    modified.push(dir)
+    Progress.statement(`Created ${dir}`)
+  }
+  catch (err) {
+    Exception.throw(err.message)
+  }
 }
 
 const createFile = async (file) => {
-  modified.push(file.file)
-  await fs.writeFile(file.file, file.contents)
+  try {
+    modified.push(file.file)
+    await fs.writeFile(file.file, file.contents)
+  }
+  catch (err) {
+    Exception.throw(err.message)
+  }
 }
 
 const dirs: dir[] = [
