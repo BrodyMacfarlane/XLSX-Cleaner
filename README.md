@@ -14,6 +14,12 @@ foo@bar:~/XLSX-Cleaner $ npm i
 ## Usage
 
 ```console
+foo@bar:~/XLSX-Cleaner $ npm run start
+```
+
+or
+
+```console
 foo@bar:~/XLSX-Cleaner $ npx ts-node index.ts
 ```
 
