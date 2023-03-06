@@ -74,7 +74,7 @@ const createFiles = async () => {
   for (const file of files) {
     const exists = await validateFileOrDirExists(file.file)
     if (!exists) await createFile(file)
-    if (file.file === 'config.json') Progress.note(`Make sure to setup your column compilations inside of ${colors.bold('config.json')}`)
+    if (file.file === 'config.json') Progress.note(`Make sure to setup your column compilations inside of ${colors.cyan('config.json')}`)
   }
 }
 
