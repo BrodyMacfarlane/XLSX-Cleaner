@@ -60,16 +60,24 @@ const files: file[] = [
   }
 ]
 
-export default async () => {
+const createDirs = async () => {
   for (const dir of dirs) {
     const exists = await validateFileOrDirExists(dir)
     if (!exists) createDir(dir)
   }
+  return
+}
 
+const createFiles = async () => {
   for (const file of files) {
     const exists = await validateFileOrDirExists(file.file)
     if (!exists) createFile(file)
   }
+}
+
+export default async () => {
+  await createDirs()
+  await createFiles()
 
   const modifiedString = modified.join(', ')
 
