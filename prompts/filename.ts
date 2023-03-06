@@ -2,7 +2,6 @@ import fs from 'fs/promises'
 import { inputFileDir } from '../dir'
 import Prompt from './Prompt'
 import colors from '@colors/colors/safe'
-import Exception from '../exceptions/Exception'
 
 function getFileFromFilename(filename: string) {
   const fileHasExtension = filename.endsWith('.xlsx')
@@ -32,13 +31,6 @@ export const inputFilePrompt = new Prompt({
 
 export default async () => {
   const file = await inputFilePrompt.prompt()
-
-  // try {
-  //   await fs.stat(inputFileDir(file))
-  // }
-  // catch (err) {
-  //   Exception.throw(`File '${file}' does not exist inside of '@/spreadsheets/input/.\nPlease double check the file exists and has the correct extension.`)
-  // }
 
   return file
 }

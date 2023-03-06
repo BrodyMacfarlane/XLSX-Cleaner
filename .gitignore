@@ -136,3 +136,4 @@ dist
 # Project specific
 spreadsheets/input/*
 spreadsheets/output/*
+config.json
