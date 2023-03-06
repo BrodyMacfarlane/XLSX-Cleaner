@@ -18,4 +18,8 @@ export default class Progress {
   static title(message: string) {
     console.log(colors.underline(colors.bold((colors.white(message)))))
   }
+
+  static note(message: string) {
+    console.log(colors.bold(colors.white('Note -')), colors.white(message))
+  }
 }
