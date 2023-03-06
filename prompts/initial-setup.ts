@@ -63,7 +63,7 @@ const files: file[] = [
 const createDirs = async () => {
   for (const dir of dirs) {
     const exists = await validateFileOrDirExists(dir)
-    if (!exists) createDir(dir)
+    if (!exists) await createDir(dir)
   }
   return
 }
@@ -71,7 +71,7 @@ const createDirs = async () => {
 const createFiles = async () => {
   for (const file of files) {
     const exists = await validateFileOrDirExists(file.file)
-    if (!exists) createFile(file)
+    if (!exists) await createFile(file)
   }
 }
 

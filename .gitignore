@@ -134,6 +134,6 @@ dist
 
 
 # Project specific
-spreadsheets/input/*
-spreadsheets/output/*
+spreadsheets/
+spreadsheets-test/
 config.json
