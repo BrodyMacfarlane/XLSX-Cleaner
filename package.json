@@ -4,7 +4,8 @@
   "description": "Cleans common data issues with the superhero dog spreadsheets.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node index.ts"
   },
   "author": "BrodyMacfarlane",
   "license": "MIT",
