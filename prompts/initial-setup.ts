@@ -26,7 +26,7 @@ const createDir = async (dir) => {
 }
 
 const createFile = async (file) => {
-  modified.push(file)
+  modified.push(file.file)
   await fs.writeFile(file.file, file.contents)
 }
 
@@ -62,6 +62,6 @@ export default async () => {
 
   const modifiedString = modified.join(', ')
 
-  if (modified.length) Progress.success(`${modifiedString} files/directories created.`)
+  if (modified.length) Progress.success(`${modifiedString} created.`)
   Progress.title("Init successful.")
 }

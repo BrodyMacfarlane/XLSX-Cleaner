@@ -1,6 +1,5 @@
-import { columnsToCompile } from '../config.json'
-
 export const compileColumns = (json) => {
+  const columnsToCompile = require('../config.json')
   let newJson = json
   columnsToCompile.forEach((ocol, i) => {
     newJson[i][ocol.newColumnName] = {}
