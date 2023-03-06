@@ -1,0 +1,42 @@
+{
+  "columnsToCompile": [
+    {
+      "newColumnName": "Questionnaire",
+      "columnsToInclude": [
+        "This field is optional. Are there any HUMAN medical conditions, disabilities or other information that we should be aware of? If so, please let us know the best way that we can accommodate your needs",
+        "Names of adults living in the home not listed above",
+        "Has your household changed in the last 12 months? (new home, new job, family members move in or out, new baby, new animal in the house, illness, person or companion animal died, etc.) Please describe:",
+        "Describe your previous experience with dogs:",
+        "Dog's medical information (medications, allergies, illness, etc)",
+        "Breed",
+        "Gender",
+        "Age",
+        "Approximate Weight (lbs)",
+        "Spayed/Neutered",
+        "Where did you obtain your dog? List rescue agency or breeder name, if available",
+        "How long have you had this dog?",
+        "We believe all dogs are Superheroes. What is your dog's super power?",
+        "How much time per day do you CURRENTLY spend training your dog?",
+        "How much time per day do you CURRENTLY spend exercising your dog?",
+        "What kinds of exercise does your dog receive weekly? (walks, hikes, running, biking, backyard play, dog parks, dog daycare, etc.)",
+        "What percentage of time does your dog spend indoors/outdoors?",
+        "Is your dog potty-trained?",
+        "Has your dog ever bitten or nipped at any PERSON, even if it didn't break skin? Has your dog ever bitten another ANIMAL that required medical care? If so, please describe the situation. *A bite history does not disqualify your dog for training!*",
+        "What are your training goals?",
+        "List all obedience commands your dog can respond to reliably at home",
+        "List all obedience commands your dog can respond to reliably in a distracting environment (on a walk, dog park, crowded area, etc)",
+        "Meeting an unfamiliar human",
+        "Greeting a familiar human",
+        "Greeting an unfamiliar dog",
+        "Greeting a familiar dog",
+        "A loud sound (fireworks, thunder, construction, etc)",
+        "Passing moving cars, bicycles, scooters, joggers, etc",
+        "Person or dog approaches their food bowl, or tries to take away a favorite object?",
+        "Being left alone",
+        "Any fearful, anxious, overexcited or aggressive reactions not listed above? Any additional details on behaviors?",
+        "How do you respond to problem behaviors with this dog? Check all that apply",
+        "Have you previously contacted a trainer, behaviorist, or veterinarian for help with behavior problems? Describe"
+      ]
+    }
+  ]
+}

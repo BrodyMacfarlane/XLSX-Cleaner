@@ -12,6 +12,10 @@ export default class Progress {
   }
 
   static success(message: string) {
-    console.log(colors.green(colors.bold('Success\n')), colors.green(message))
+    console.log(colors.bold(colors.green('Success -')), colors.green(message))
+  }
+
+  static title(message: string) {
+    console.log(colors.underline(colors.bold((colors.white(message)))))
   }
 }
