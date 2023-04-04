@@ -52,9 +52,15 @@ const files: file[] = [
   {
     file: "config.json",
     contents: JSON.stringify({
+      "cleanupMethods": {
+        "no spaces": [],
+        "numbers only": []
+      },
+      "firstNameColumn": "",
+      "lastNameColumn": "",
       "columnsToCompile": [
         {
-          "newColumnName": "Questionnaire",
+          "newColumnName": "",
           "columnsToInclude": []
         }
       ]
