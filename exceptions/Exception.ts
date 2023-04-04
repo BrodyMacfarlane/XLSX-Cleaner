@@ -9,7 +9,7 @@ export default class Exception {
 
   static throw(message: string) {
     console.error(`${colors.underline(colors.red('\n\nError\n'))}${colors.red(message)}`)
-    process.exit(1)
+    process.exit(0)
   }
 
   static warn(message: string) {
@@ -18,6 +18,6 @@ export default class Exception {
 
   static gracefullyShutdown() {
     console.log(colors.bold(colors.white('\n\nAborted')))
-    process.exit(1)
+    process.exit(0)
   }
 }
